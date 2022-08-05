@@ -1,8 +1,6 @@
 <?php /**
- * Header template.
- * @package Shila
- */ ?>
-
+ * Shila Theme Header.
+ * @package Shila */ ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -12,6 +10,5 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<?php if( function_exists('wp_body_open') ){
-    wp_body_open();
-} ?> <header>The Header</header>
+<?php wp_body_open(); ?>
+    <header>This Is Theme Header</header>

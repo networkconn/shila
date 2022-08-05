@@ -1,12 +1,14 @@
-/* 
+/* ==================================
 * Theme Name: Shila
 * Theme URI: https://theme.silohon.com/shila
+* Description: This is Theme special design for blog CMS WordPress, and Addsite Google Adsense.
+* Tags: Fast Load, Lazy Load Image, Responsive
 * Author: Nur Akbar
-* Author URI: https://github.com/silohon
-* Description: Powerfull Theme WordPress for blog, News blog, and more.
-* Tags: Blog, Theme, Responsive, Fast Load
+* Autor URI: https://github.com/silohon
 * Version: 1.0
-* License: GNU General Public License v2 or later
-* License URI: http://www.gnu.org/licenses/gpl-2.0.html
-* Text Domain: shila
-*/
+* Text Domain: shila */
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
