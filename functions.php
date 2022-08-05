@@ -2,12 +2,21 @@
  * Shila Theme Functions.
  * @package Shila */
 
+define('THEME_NAME', 'Shila');
+define('THEME_DESIGNER', 'Nur Akbar');
+define('THEME_DESIGNER_URI', 'https://github.com/silohon');
+
 /*=======================
 * This Setup Shila Theme
 ========================*/
 add_action('after_setup_theme', 'shila_setup');
 function shila_setup(){
     add_theme_support('title-tag');
+
+    register_nav_menus( array(
+        'nav-header' => __('Menu Header', 'shila'),
+        'nav-footer' => __('Menu Footer', 'shila')
+    ) );
 }
 
 /**===========================

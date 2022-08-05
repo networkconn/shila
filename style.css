@@ -7,8 +7,279 @@
 * Autor URI: https://github.com/silohon
 * Version: 1.0
 * Text Domain: shila */
+:root{
+    --linkColor:#2B4865;
+    --hoverColor:#256D85;
+    --pColor:#413F42;
+}
+
+/* Include Font */
+@font-face {
+    font-family: 'Anton';
+    src: url('/wp-content/themes/shila/fonts/anton-regular-webfont.woff2') format('woff2'),
+        url('/wp-content/themes/shila/fonts/anton-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Oswald';
+    src: url('/wp-content/themes/shila/fonts/oswald-variablefont_wght-webfont.woff2') format('woff2'),
+        url('/wp-content/themes/shila/fonts/oswald-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pt Serif';
+    src: url('/wp-content/themes/shila/fonts/ptserif-regular-webfont.woff2') format('woff2'),
+        url('/wp-content/themes/shila/fonts/ptserif-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* End Include Font */
 *{
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+    font-family: 'Pt Serif';
+    background-color: #fff;
+}
+.container{
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/* =======================
+* Style For Header====== */
+/* Header */
+.shila_header{
+    width: 100%;
+    position: relative;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .3);
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+.shila_header_special{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: flex-end;
+}
+/* Left */
+.shila_header_special .shila_lef{
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.shila_lef span{
+    background-color: var(--linkColor);
+    height: 3px;
+    border-radius: 10px;
+    margin: 3px 0;
+}
+.shila_lef:hover span{
+    background-color: var(--hoverColor);
+}
+.shila_lef span:nth-child(2){
+    width: 33px;
+}
+.shila_lef span:nth-child(3){
+    width: 29px;
+}
+/* mid */
+.shila_header_special .shila_mid{
+    width: calc(100% - 80px);
+    box-sizing: border-box;
+    text-align: center;
+}
+.shila_mid a img{
+    height: 60px;
+    width: auto;
+    margin: 10px 0;
+}
+.shila_mid .shila_nav_header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 10px;
+}
+.shila_nav_header li{
+    padding: 0 5px;
+    font-family: 'Anton';
+}
+.shila_nav_header li a{
+    color: var(--linkColor);
+    text-decoration: none;
+    transition: .5s;
+}
+.shila_nav_header li a:hover{
+    color: var(--hoverColor);
+}
+.shila_nav_header .current-menu-item a{
+    color: var(--hoverColor);
+    text-decoration: underline 2px var(--hoverColor);
+}
+
+/* right */
+.shila_header_special .shila_right{
+    width: 40px;
+    height: 30px;
+}
+
+
+/* Menu Flexbox */
+.shila_flex{
+    position: absolute;
+    top: 0;
+    width: 400px;
+    min-height: 100vh;
+    background-color: #fff;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+.shila_flex_header{
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.shila_flex_header a{
+    text-decoration: none;
+}
+.shila_flex_header a .shila_flex_title{
+    font-family: 'Anton';
+    color: #000;
+    letter-spacing: 2px;
+    font-size: 22px;
+}
+.shila_flex_header .shila_flex_close{
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.shila_flex_close span{
+    width: 100%;
+    height: 3px;
+    border-radius: 10px;
+    background-color: var(--linkColor);
+}
+.shila_flex_close:hover span{
+    background-color: var(--hoverColor);
+    transition: .5s;
+}
+.shila_flex_close span:nth-child(1){
+    transform: rotate(-45deg);
+    transform-origin: 60% 560%;
+}
+.shila_flex_close span:nth-child(2){
+    transform: rotate(45deg);
+    transform-origin: 17% -240%;
+}
+.flex100{
+    transform: translate(-103%);
+}
+h4.shila_cat{
+    margin-bottom: 10px;
+    font-family: 'Oswald';
+    font-size: 18px;
+    color: var(--pColor);
+}
+ul.shila_cat_flex{
+    list-style: none;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+.shila_cat_flex li{
+    margin: 5px 0;
+    padding-right: 20px;
+    border-bottom: 1px solid var(--pColor);
+    width: max-content;
+}
+.shila_cat_flex li a{
+    color: var(--linkColor);
+    text-decoration: none;
+    transition: .5s;
+}
+.shila_cat_flex li a:hover{
+    color: var(--hoverColor);
+}
+
+/* =========================
+* Style For Footer======== */
+.shila_footer{
+    background-color: var(--pColor);
+    text-align: center;
+    margin-top: 40px;
+    border-top: 3px solid var(--hoverColor);
+    padding: 30px 0;
+    box-sizing: border-box;
+}
+ul.shila_menu_footer{
+    display: inline-flex;
+    list-style: none;
+}
+.shila_menu_footer li{
+    padding: 0 5px;
+    font-family: 'Oswald';
+}
+.shila_menu_footer li a{
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+}
+.shila_copyR{
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--linkColor);
+    padding: 10px 0;
+}
+.shila_part_foot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.shila_foot_left,
+.shila_foot_right{
+    color: #fff;
+}
+.shila_foot_left a,
+.shila_foot_right a{
+    color: #d1caca;
+    text-decoration: none;
+}
+
+/* Back to Top */
+.shila_backtop{
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--linkColor);
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 3px;
+    box-shadow: 3px 3px 3px var(--linkColor);
+}
+.shila_backtop a img{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
 }

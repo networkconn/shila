@@ -10,5 +10,12 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<?php wp_body_open(); ?>
-    <header>This Is Theme Header</header>
+<?php if(function_exists('wp_body_open')){
+    wp_body_open();
+} ?>
+<header class="shila_header">
+    <?php get_template_part('template/header/navbar'); ?>
+</header>
+<div id="shila_flex" class="shila_flex flex100">
+    <?php get_template_part('template/header/flex'); ?>
+</div>
