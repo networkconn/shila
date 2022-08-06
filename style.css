@@ -46,11 +46,17 @@ body{
     font-family: 'Pt Serif';
     background-color: #fff;
 }
+img{
+    width: 100%;
+}
 .container{
     width: 100%;
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 10px;
+}
+.shila_none{
+    display: none;
 }
 
 /* =======================

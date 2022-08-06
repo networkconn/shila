@@ -1,0 +1,27 @@
+/* Stylesheet For 404 Page */
+.shila_404{
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    margin: 40px auto;
+    text-align: center;
+}
+.shila_404 .shila_404_title{
+    font-size: 60px;
+    color: #a8a6a6;
+    margin-bottom: 20px;
+    font-family: 'Anton';
+    letter-spacing: 3px;
+}
+.shila_404 .shila_404_p{
+    font-size: 18px;
+    color: var(--pColor);
+    font-family: 'Oswald';
+}
+.shila_404 hr{
+    width: 100%;
+    margin-top: 20px;
+    background-color: var(--linkColor);
+    height: 3px;
+    transform: skewX(-10deg);
+}
