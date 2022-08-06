@@ -30,9 +30,10 @@
             </a>
         </li>
         <?php endwhile;
+            echo '<div class="shila_pagination">';
             echo paginate_links( array(
                 'mid_size' => 2
-            )); ?>
+            )); echo '</div>'; ?>
     </ul>
     <div class="shila_sidebar">
         <?php get_sidebar(); ?>

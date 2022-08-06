@@ -6,7 +6,9 @@ add_action('wp_enqueue_scripts', 'shila_script');
 function shila_script(){
     // Stylesheet
     wp_enqueue_style('shila-style', get_stylesheet_uri(), [], filemtime( SHILA_PATH . '/style.css'));
-    if(is_home()){
+    if(is_front_page()){
+        wp_enqueue_style('shila-front', SHILA_PATH_URI . '/css/shila-front.css', [], filemtime( SHILA_PATH . '/css/shila-front.css'));
+    } if(is_home()){
         wp_enqueue_style('shila-home', SHILA_PATH_URI . '/css/shila-home.css', [], filemtime( SHILA_PATH . '/css/shila-home.css'));
     }
     if(is_404() || !have_posts()){

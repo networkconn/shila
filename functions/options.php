@@ -1,3 +1,3 @@
 <?php /**
- * Sidebar Shila Theme.
+ * All Option For Shila Theme.
  * @package Shila */ ?>

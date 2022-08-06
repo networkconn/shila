@@ -11,6 +11,7 @@
     --linkColor:#2B4865;
     --hoverColor:#256D85;
     --pColor:#413F42;
+    --pBlur:#69686a;
 }
 
 /* Include Font */
@@ -48,6 +49,9 @@ body{
 }
 img{
     width: 100%;
+}
+ul{
+    list-style: none;
 }
 .container{
     width: 100%;
@@ -153,6 +157,7 @@ img{
     padding: 50px 20px;
     box-sizing: border-box;
     transition: .5s;
+    z-index: 99;
 }
 .shila_flex_header{
     width: 100%;
