@@ -1,0 +1,74 @@
+/* Front Page Css */
+.hero{
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+a.hero_link{
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+a.hero_link img{
+    width: 100%;
+    height: 600px;
+    position: relative;
+    object-position: center;
+    object-fit: cover;
+}
+a.hero_link .hero_body{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 30px 100px;
+    box-sizing: border-box;
+    text-align: center;
+    background: linear-gradient(to top, #000 0, rgba(0, 0, 0, .5) 50%, rgba(0, 0, 0, .3) 75%, transparent 100%);
+}
+.hero_body .meta{
+    font-size: 14px;
+    color: var(--putihBlur);
+}
+.hero_body .hero_title{
+    width: 100%;
+    margin: 10px 0;
+    font-family: 'Anton';
+    color: #fff;
+    font-size: 45px;
+    line-height: 50px;
+    letter-spacing: 1px;
+}
+/* Hero Child */
+.hero_child{
+    width: 100%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-top: 10px;
+}
+a.hero_child_link{
+    position: relative;
+    box-sizing: border-box;
+}
+a.hero_child_link img{
+    width: 100%;
+    height: 150px;
+    object-position: center;
+    object-fit: cover;
+}
+.hero_child_link .hero_child_body{
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Oswald';
+}
+.hero_child_body span{
+    font-size: 14px;
+    color: var(--pBlur);
+}
+.hero_child_body .child_hero_title{
+    margin-top: 10px;
+    font-size: 16px;
+}
+/* end Hero Css */

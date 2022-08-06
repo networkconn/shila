@@ -12,6 +12,7 @@
     --hoverColor:#256D85;
     --pColor:#413F42;
     --pBlur:#69686a;
+    --putihBlur:#d4d1d6;
 }
 
 /* Include Font */
@@ -46,6 +47,10 @@ body{
     overflow-x: hidden;
     font-family: 'Pt Serif';
     background-color: #fff;
+}
+a{
+    color: #000;
+    text-decoration: none;
 }
 img{
     width: 100%;
