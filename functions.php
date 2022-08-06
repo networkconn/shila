@@ -16,4 +16,3 @@ define('THEME_DESIGNER_URI', 'https://github.com/silohon');
 require_once SHILA_PATH. '/functions/theme.php';
 require_once SHILA_PATH. '/functions/script.php';
 require_once SHILA_PATH. '/functions/admin.php';
-require_once SHILA_PATH. '/functions/options.php';
