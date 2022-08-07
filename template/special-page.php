@@ -84,4 +84,5 @@ if(get_option('shila_sec_1') != 'false' && get_option('shila_sec_1') != ''){
     get_template_part('template/home/section', '8');
 } if(get_option('shila_sec_9') != 'false' && get_option('shila_sec_9') != ''){
     get_template_part('template/home/section', '9');
-} echo '</div>'; ?>
+} echo '</div>';
+echo get_site_icon_url(); ?>

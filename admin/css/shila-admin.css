@@ -1,0 +1,68 @@
+/* Include Font */
+@font-face {
+    font-family: 'Anton';
+    src: url('/wp-content/themes/shila/fonts/anton-regular-webfont.woff2') format('woff2'),
+        url('/wp-content/themes/shila/fonts/anton-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Oswald';
+    src: url('/wp-content/themes/shila/fonts/oswald-variablefont_wght-webfont.woff2') format('woff2'),
+        url('/wp-content/themes/shila/fonts/oswald-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pt Serif';
+    src: url('/wp-content/themes/shila/fonts/ptserif-regular-webfont.woff2') format('woff2'),
+        url('/wp-content/themes/shila/fonts/ptserif-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+:root{
+    --linkColor:#2B4865;
+    --hoverColor:#256D85;
+    --pColor:#413F42;
+    --pBlur:#69686a;
+    --putihBlur:#d4d1d6;
+}
+
+/* Shila Admin Css */
+.shila_admin_container{
+    width: 40%;
+}
+.shila_setting{
+    font-size: 30px;
+    font-family: 'Anton';
+    color: var(--linkColor);
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+/* General Setting */
+form.shila_general,
+form.sila_front{
+    width: 400px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.shila_general label,
+.sila_front label{
+    font-family: 'Oswald';
+    color: var(--pBlur);
+}
+input.tombol_save{
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+    background-color: var(--linkColor);
+    color: #fff;
+    font-family: 'Oswald';
+    font-size: 14px;
+    padding: 5px 10px;
+}
+
+/* Hompage Setting Admin */

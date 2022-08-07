@@ -11,9 +11,16 @@ function shila_setup(){
     add_theme_support( 'post-thumbnails' );
     add_theme_support( 'automatic-feed-links' );
 
+    // Nav Menu
     register_nav_menus( array(
         'nav-header' => __('Menu Header', 'shila'),
         'nav-footer' => __('Menu Footer', 'shila')
+    ) );
+
+    // Register Sidebar
+    register_sidebar( array(
+        'id' => 'home',
+        'name' => 'Home Sidebar'
     ) );
 }
 
