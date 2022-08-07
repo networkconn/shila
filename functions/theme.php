@@ -16,12 +16,15 @@ function shila_setup(){
         'nav-header' => __('Menu Header', 'shila'),
         'nav-footer' => __('Menu Footer', 'shila')
     ) );
+}
 
-    // Register Sidebar
+// Widget Init
+add_action('widgets_init', 'shila_widget');
+function shila_widget(){
     register_sidebar( array(
         'id' => 'home',
-        'name' => 'Home Sidebar'
-    ) );
+        'name' => 'Home Sidebar',
+    ));
 }
 
 // The Excerpt Length

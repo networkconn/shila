@@ -15,7 +15,7 @@ echo '
         } else{
             $default_logo = get_template_directory_uri(). '/img/logo.png';
             echo '<img src="'.$default_logo.'" alt="'.get_bloginfo('name').'" />';
-        }
+        } echo '<h1 style="display:none;">'.get_bloginfo('name').'</h1>';
 echo '</a>';
 wp_nav_menu( array(
     'theme_location' => 'nav-header',

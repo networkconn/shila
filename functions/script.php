@@ -12,6 +12,8 @@ function shila_script(){
         wp_enqueue_style('shila-home', SHILA_PATH_URI . '/css/shila-home.css', [], filemtime( SHILA_PATH . '/css/shila-home.css'));
     } if(is_category( )){
         wp_enqueue_style('shila-cat', SHILA_PATH_URI . '/css/shila-cat.css', [], filemtime( SHILA_PATH . '/css/shila-cat.css'));
+    } if(is_search()){
+        wp_enqueue_style('shila-search', SHILA_PATH_URI . '/css/shila-search.css', [], filemtime( SHILA_PATH . '/css/shila-search.css'));
     }
     if(is_404() || !have_posts()){
         wp_enqueue_style('shila-404', SHILA_PATH_URI. '/css/shila-404.css', [], filemtime( SHILA_PATH . '/css/shila-404.css'));
